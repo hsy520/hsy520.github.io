@@ -1,0 +1,281 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script type="text/javascript">
+<!--
+function startTime()
+{
+var today=new Date()
+var h=today.getHours()
+var m=today.getMinutes()
+var s=today.getSeconds()
+// add a zero in front of numbers<10
+m=checkTime(m)
+s=checkTime(s)
+document.getElementById('txt').innerHTML=h+":"+m+":"+s
+t=setTimeout('startTime()',500)
+}
+
+function checkTime(i)
+{
+if (i<10) 
+  {i="0" + i}
+  return i
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+ 
+
+
+<style type="text/css">
+div#container{width:1500px}
+div#header {background-color:pink;}
+div#menu {background-color:pink;height:600px;width:300px;float:left;}
+div#content {background-color:#EEEEEE;height:600px;width:1200px;float:left;}
+div#footer {background-color:#99bbbb;clear:both;text-align:center;}
+h1 {margin-bottom:0;}
+h2 {margin-bottom:0;font-size:54px;}
+ul {margin:0;}
+li {list-style:none;}
+.STYLE1 {font-size: 24px}
+.STYLE2 {font-size: 36px}
+#Layer1 {
+	position:absolute;
+	width:1196px;
+	height:604px;
+	z-index:1;
+	left: 309px;
+	top: 120px;
+}
+#Layer2 {
+	position:absolute;
+	width:1124px;
+	height:603px;
+	z-index:1;
+	left: -48px;
+	top: 21px;
+}
+
+</style>
+<style>
+ul
+{
+list-style-type:none;
+margin:0;
+padding:0;
+padding-top:6px;
+padding-bottom:6px;
+}
+li
+{
+display:inline;
+}
+a:link,a:visited
+{
+font-weight:bold;
+color:#FFFFFF;
+background-color:#98bf21;
+text-align:center;
+padding:6px;
+text-decoration:none;
+text-transform:uppercase;
+}
+a:hover,a:active
+{
+	background-color: #7A991A;
+	color: #F39394;
+}
+
+body {
+	background-image: url(jQuery可爱火箭回到顶部效果代码/images/71.jpg);
+}
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>火箭回到顶部效果_js代码网</title>
+<meta name="keywords" content="回到顶部,返回顶部,火箭,jquery返回顶部,返回顶部代码,星空背景,可爱卡通,js返回顶部,返回顶部,JS返回顶部代码,jquery返回顶部代码,js置顶代码,回到顶部代码" />
+<meta name="description" content="jQuery可爱火箭回到顶部效果代码" />
+<link href="jQuery可爱火箭回到顶部效果代码/css/jsdaima.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+body {
+	background-image: url(images/71.jpg);
+}
+body,td,th {
+	color: #000000;
+}
+#Layer3 {
+	position:absolute;
+	width:113px;
+	height:102px;
+	z-index:1;
+	left: 315px;
+	top: 294px;
+}
+#Layer4 {
+	position:absolute;
+	width:108px;
+	height:101px;
+	z-index:2;
+	left: 430px;
+	top: 295px;
+}
+#Layer5 {
+	position:absolute;
+	width:107px;
+	height:100px;
+	z-index:3;
+	left: 544px;
+	top: 296px;
+}
+#Layer6 {
+	position:absolute;
+	width:371px;
+	height:91px;
+	z-index:4;
+	left: 320px;
+	top: 118px;
+}
+#Layer7 {
+	position:absolute;
+	width:125px;
+	height:36px;
+	z-index:4;
+	left: 553px;
+	top: 106px;
+}
+#Layer8 {
+	position:absolute;
+	width:797px;
+	height:311px;
+	z-index:4;
+	left: 317px;
+	top: 400px;
+}
+.STYLE3 {
+	font-family: "新宋体";
+	font-size: 18px;
+}
+#Layer9 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:5;
+}
+</style>
+
+</head>
+
+<body onload="startTime();MM_preloadImages('jQuery可爱火箭回到顶部效果代码/images/1408754175877921[1].gif','jQuery可爱火箭回到顶部效果代码/images/1219353462-12[1].gif','jQuery可爱火箭回到顶部效果代码/images/101210133132155[1].gif','jQuery可爱火箭回到顶部效果代码/images/20131203154121_rPHaH[1] (2).jpg','jQuery可爱火箭回到顶部效果代码/images/5[1].gif','images/140875417518994[1].gif','images/1219353462-12[1].gif','images/5[1].gif')">
+<!-- 代码 开始 --><script type="text/javascript" src="jQuery可爱火箭回到顶部效果代码/js/jquery.min.js"></script>
+<div class="actGotop"><a href="javascript:;" title="返回顶部"></a></div>
+<script type="text/javascript">
+$(function(){	
+	$(window).scroll(function() {		
+		if($(window).scrollTop() >= 100){ //向下滚动像素大于这个值时，即出现小火箭~
+			$('.actGotop').fadeIn(300); //火箭淡入的时间，越小出现的越快~
+		}else{    
+			$('.actGotop').fadeOut(300); //火箭淡出的时间，越小消失的越快~
+		}  
+	});
+	$('.actGotop').click(function(){$('html,body').animate({scrollTop: '0px'}, 800);}); //火箭动画停留时间，越小消失的越快~
+});
+</script>
+<!-- 代码 结束 -->
+
+ 
+
+<div id="container">
+
+<div id="header">
+<h1 align="center" class="STYLE2">徐静的个人博客</h1> 
+
+<ul>
+<li class="STYLE1"><a href="相册.htm" >@个人主页</a></li>
+<li class="STYLE1"><a href="日志.htm" >@我的日志</a></li>
+<li class="STYLE1"><a href="好友.htm" >@好友博客</a></li>
+<li class="STYLE1"><a href="留言.htm" >@留言板</a></li>
+<li class="STYLE1"><a href="链接.htm" >@友情链接</a></li>
+<div class="STYLE3" id="Layer8">
+  <blockquote>
+    <p style="font-size: 16px">生命像东流的一江春水，他从生命最高处发源，冰雪是他的前身。他聚集起许多细流，合成一股有力的洪涛，向下奔注，他曲折的穿过了悬崖削壁，冲倒了层沙积土，挟卷着滚滚的沙石，快乐勇敢的流走，一路上他享受着他所遭遇的一切；有时候他遇到巉岩前阻，他愤激的奔腾了起来，怒吼着，回旋着，前波后浪的起伏催逼，直到他过了，冲倒了这危崖他才心平气和的一泻千里。有时候他经过了细细的平沙，斜阳芳草里，看见了夹岸的桃花，他快乐而又羞怯，静静的流着，低低的吟唱着，轻轻的度过这一段浪漫的行程。有时候他遇到暴风雨，这激电，这迅雷，使他的心魂惊骇，疾风吹卷起他，大雨击打着他，他暂时浑浊了，扰乱了，而雨过天晴，只加给他许多新生的力量。有时候他遇到了晚霞和新月，向他照耀，向他投影，清冷中带些幽幽的温暖：这时他只想憩息，只想睡眠，而那股前进的力量，仍催逼着他向前走……终于有一天，他远远的望见了大海，呵！他已经到了行程的终结，这大海，使他屏息，使他低头，她多么辽阔，多么伟大！多么光明，又多么黑暗！大海庄严的伸出臂儿来接引他，他一声不响的流入她的怀里。他消融了归化了，说不上快乐，也没有悲哀！也许有一天，他再从海上蓬蓬的雨点中升起，飞向西来，再形成一道江流，再冲倒两旁的石壁，再来寻夹岸的桃花。</p>
+    <p><br /> 
+      <br />
+    </p>
+  </blockquote>
+</div>
+</ul>
+</div>
+
+ 
+<div id="menu">
+<h2 class="STYLE1">我的资料</h2>
+<ul>
+<li></li>
+<li><img src="images/244c86b44446d453-b4b9a46aaf4ad161-dae9efbe73842d2ba6d1a8968d28657d[1].jpg" width="80" height="80"></li>
+<li></li>
+<li>
+  <p class="STYLE1">姓名：徐静</p>
+  <p class="STYLE1">性别：女</p>
+  <p class="STYLE1">爱好：吃</p>
+  <p class="STYLE1">家乡：益阳</p>
+  <p class="STYLE1">专业：软件工程</p>
+  <p class="STYLE1">星座：天秤座</p>
+  <p class="STYLE1">座右铭：生如夏花之绚烂，死如秋叶之静美</p>
+</li>
+<li></li>
+ </ul>
+</div>
+<div id="content"><img src="images/bd547533a4[1].jpg" width="1200" height="600" alt=""/>
+ <embed src="../QQ音乐/1.mp3" width="32" height="32">  
+</div>
+  <div id="Layer5"><a href="留言.htm" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image6','','images/5[1].gif',1)"><img src="images/2[1].gif" name="Image6" width="118" height="100" border="0" id="Image6" /></a></div>
+  <div id="Layer4"><a href="日志.htm" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image5','','images/1219353462-12[1].gif',1)"><img src="images/121935M51-3[1].gif" name="Image5" width="100" height="100" border="0" id="Image5" /></a></div>
+  <div id="Layer3"><a href="心情.htm" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image4','','images/140875417518994[1].gif',1)"><img src="images/1408754175402225[1].gif" name="Image4" width="100" height="100" border="0" id="Image4" /></a></div> 
+</div>
+<div id="footer">
+</div>
+ 
+
+<strong><div id="txt"></div></strong><!--时间-->
+ <marquee  direction="left"><p align="right">欢迎来到我的首页!!</p></marquee>
+<marquee  direction="right">
+<p>来访要留痕迹哦!<img src="images/2.gif" width="160" height="160" alt=""/>么么哒!</p>
+</marquee>
+
+<body style="height:2000px">
+ 
+<div class="foot"> </div>
+<div class="f1">
+<h2 class="STYLE2 STYLE5">*最新日记*</h2>
+<p class="STYLE4">风在勇敢的小道上吹拂。树和灌木留在下面，这里只生长石头和苔藓。没人到这里来寻觅什么东西，没人在这里有产业，农民在这上面也没有干草和木材。但是，远方在召唤，眷念在燃烧，眷念在岩石、泥沼和积雪之上筑成这条宜人的小道，通往另一些山谷，另一些房屋，另一些语言和人群。<br /><br />
+    到了山口的高处，我站住脚。往下的道路通向两侧，水也流向两侧；在这儿高处，紧挨着的、手携手的一切，都找到了各自的道路通往两个世界。我的鞋子轻轻触过的小水潭的小堆残雪，一滴滴雪水落向南方，流向利古利亚海汇入大海，这大海的边缘是非洲。但是，世界上所有的水都回重逢，冰海和尼罗河融合成潮湿的云团。这古老、优美的比喻使我感到这个时刻的神圣。每一条道路都引领我们流浪者回家。<br /><br />
+     
+    但是我微笑了，不只是用嘴。我用灵魂，用眼睛，用全身的皮肤微笑，我用不同于从前的感官，去迎那向山上送来芳香的田野，它们比从前更细腻，更沉静，更敏锐，更老练，也更含感激之情。今天，这一切比往昔越发为我所有，同我交谈的语言更加丰富，增加了成百倍的细腻程度。我的如醉的眷念不再去描绘那些想象朦胧远方的五彩梦幻，我的眼睛满足于观看实在的事物，因为它已经学会了观看。从那时起世界已变得更加美丽。<br /><br />
+    世界已变得更加美丽。我独自一人，并且不因为孤单而苦恼。我别无其他愿望。我准备让太阳把我煮熟。我渴望成熟。我准备去死，准备再生。世界已变得更加美丽。</p>
+</div>
+
+</body>
+</html>
